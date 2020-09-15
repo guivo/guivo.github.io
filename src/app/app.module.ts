@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatIconModule, MatIconRegistry } from '@angular/material/icon'
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MatIconModule, MatIconRegistry } from '@angular/material/icon'
     BrowserModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatSidenavModule
   ],
   providers: [MatIconRegistry],
   bootstrap: [AppComponent]
