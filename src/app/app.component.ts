@@ -9,8 +9,6 @@ import { MatIconRegistry } from '@angular/material/icon';
 export class AppComponent {
   title = 'personal-page';
 
-  showMenu = false;
-  
   constructor(iconRegistry: MatIconRegistry) {
     iconRegistry.registerFontClassAlias('fontawesome', 'fab');
   }
