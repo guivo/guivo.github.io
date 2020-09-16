@@ -1,23 +1,23 @@
 [
     {
-        "id": 0,
+        "type": "job",
         "startDate": "2019-12-01",
         "endDate": null,
         "title": "Software Architect Embedded Systems",
         "description": "Something long"
     },
     {
-        "id": 0,
+        "type": "job",
         "startDate": "2018-02-01",
         "endDate": "2019-10-30",
         "title": "Data Analyst",
         "description": "Something long"
     },
     {
-        "id": 0,
+        "type": "job",
         "startDate": "2008-07-01",
         "endDate": "2017-12-31",
         "title": "Researcher - High Energy Physics",
-        "description": "Something long"
+        "description": ["HEP resercher at cern", "Ciao."]
     }
 ]

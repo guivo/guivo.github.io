@@ -1,5 +1,5 @@
 export interface cvExperience {
-    id: number;
+    type: string;
     startDate: Date;
     endDate?: Date;
     title: string;

@@ -14,4 +14,8 @@ export class CurriculumService {
   getExperiences() : Observable<cvExperience[]> {
     return this.http.get<cvExperience[]>("assets/experiences.json");
   }
+
+  getEducation() : Observable<cvExperience[]> {
+    return this.http.get<cvExperience[]>("assets/education.json");
+  }
 }

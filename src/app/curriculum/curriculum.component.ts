@@ -10,6 +10,7 @@ import { CurriculumService } from '../curriculum.service';
 })
 export class CurriculumComponent implements OnInit {
 
+  education: cvExperience[];
   experiences: cvExperience[];
 
   constructor(private cv: CurriculumService) {
@@ -20,8 +21,13 @@ export class CurriculumComponent implements OnInit {
     this.cv.getExperiences().subscribe(elems => this.experiences = elems);
   }
 
+  private getEducation(): void {
+    this.cv.getEducation().subscribe(elems => this.education = elems);
+  }
+
   ngOnInit(): void {
     this.getExperiences();
+    this.getEducation();
   }
 
 }
