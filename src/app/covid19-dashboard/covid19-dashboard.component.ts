@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Covid19Service } from '../covid19.service';
 
 @Component({
   selector: 'app-covid19-dashboard',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Covid19DashboardComponent implements OnInit {
 
-  constructor() { }
+  covid19Data: any[];
+
+  constructor(private covid: Covid19Service) { }
 
   ngOnInit(): void {
+    this.covid.getData().subscribe(elems => this.covid19Data = elems);
   }
 
 }
