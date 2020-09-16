@@ -14,8 +14,11 @@
 </mat-toolbar>
 
 <mat-sidenav-container>
-  <mat-sidenav #sidenav mode="side">Navigation</mat-sidenav>
+  <mat-sidenav #sidenav mode="side">
+    <div><a routerLink="/info">Info</a></div>
+    <div><a routerLink="/covid19">Covid 19</a></div>
+  </mat-sidenav>
   <mat-sidenav-content>
-    <app-curriculum></app-curriculum>
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -8,12 +8,15 @@ import { MatIconModule, MatIconRegistry } from '@angular/material/icon'
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { CurriculumComponent } from './curriculum/curriculum.component';
 import {MatExpansionModule} from '@angular/material/expansion';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { Covid19DashboardComponent } from './covid19-dashboard/covid19-dashboard.component';
+import { AppRoutingModule } from './app-routing.module'
 
 @NgModule({
   declarations: [
     AppComponent,
-    CurriculumComponent
+    CurriculumComponent,
+    Covid19DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http'
     MatIconModule,
     MatSidenavModule,
     MatExpansionModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [MatIconRegistry],
   bootstrap: [AppComponent]
