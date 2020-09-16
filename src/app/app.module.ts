@@ -8,6 +8,7 @@ import { MatIconModule, MatIconRegistry } from '@angular/material/icon'
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { CurriculumComponent } from './curriculum/curriculum.component';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
-    MatExpansionModule
+    MatExpansionModule,
+    HttpClientModule
   ],
   providers: [MatIconRegistry],
   bootstrap: [AppComponent]

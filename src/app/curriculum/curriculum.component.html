@@ -1,14 +1,35 @@
 <h1>Curriculum Vitae</h1>
 
-<h2>Education</h2>
+<h2>Work experiences</h2>
 
-<mat-expansion-panel hideToggle>
+<div>
+
+<mat-expansion-panel hideToggle *ngFor="let elem of experiences">
     <mat-expansion-panel-header>
-        <mat-panel-title>Title</mat-panel-title>
+        <mat-panel-title>{{elem.startDate}} - {{elem.endDate}}</mat-panel-title>
 
-        <mat-panel-description>Decription</mat-panel-description>
+        <mat-panel-description>{{elem.title}}</mat-panel-description>
     </mat-expansion-panel-header>
 
-    <p>Contenuto</p>    
+    <p *ngFor="let curline of elem.description">{{curline}}</p>    
 
 </mat-expansion-panel>
+
+</div>
+
+<h2>Education</h2>
+
+<div>
+
+<mat-expansion-panel hideToggle *ngFor="let elem of education">
+    <mat-expansion-panel-header>
+        <mat-panel-title>{{elem.startDate}} - {{elem.endDate}}</mat-panel-title>
+
+        <mat-panel-description>{{elem.title}}</mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <p *ngFor="let curline of elem.description">{{curline}}</p>    
+
+</mat-expansion-panel>
+
+</div>
