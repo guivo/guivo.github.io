@@ -7,7 +7,9 @@ import { Observable, throwError } from 'rxjs';
 })
 
 export class Covid19Service {
-  dataUrl = 'https://github.com/pcm-dpc/COVID-19/raw/master/dati-json/dpc-covid19-ita-regioni-latest.json';
+  dataUrl = 'https://github.com/pcm-dpc/COVID-19/raw/master/dati-json/dpc-covid19-ita-regioni-latest.json?callback=json_callback';
+
+  rawData = null;
 
   constructor(private http: HttpClient) { }
 
