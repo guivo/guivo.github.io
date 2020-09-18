@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "guivo-3b4ba"
+  },
+  "targets": {
+    "guivo-3b4ba": {
+      "hosting": {
+        "personal-page": [
+          "guivo-3b4ba"
+        ]
+      }
+    }
+  }
+}
