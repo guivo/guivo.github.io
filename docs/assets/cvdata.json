@@ -1,0 +1,20 @@
+{
+    "jobs": [
+        {
+            "type": "job",
+            "startDate": "2019-12-01",
+            "endDate": null,
+            "title": "Software Architect Embedded Systems",
+            "description": "Something long"
+        }
+    ],
+    "education": [
+        {
+            "type": "job",
+            "startDate": "2019-12-01",
+            "endDate": null,
+            "title": "Software Architect Embedded Systems",
+            "description": "Something long"
+        }
+    ]
+}

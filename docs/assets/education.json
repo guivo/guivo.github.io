@@ -1,0 +1,16 @@
+[
+    {
+        "type": "job",
+        "startDate": "2004-11-01",
+        "endDate": "2008-07-01",
+        "title": "Dottorato in Fisca Sperimentale",
+        "description": "Something long"
+    },
+    {
+        "type": "job",
+        "startDate": "1997-01-01",
+        "endDate": "2004-09-30",
+        "title": "Fisica",
+        "description": "Something long"
+    }
+]
