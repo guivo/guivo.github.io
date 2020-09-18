@@ -1,0 +1,11 @@
+{
+    "/api/covid-ita": {
+        "target": "https://github.com/pcm-dpc/COVID-19/raw/master/dati-json",
+        "secure": true,
+        "logLevel": "debug",
+        "pathRewrite": {
+            "^/api/covid-ita": ""
+        },
+        "changeOrigin": true
+    }
+}
